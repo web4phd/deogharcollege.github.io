@@ -23,7 +23,7 @@
     padding:0;
     vertical-align:baseline;
 }
-
+h2 {text-align: center;}
 body{
     background-color: #fafafa;
     background-size: cover;
