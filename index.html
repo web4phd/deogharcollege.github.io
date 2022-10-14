@@ -20,6 +20,39 @@
 
   gtag('config', 'G-Z9WEK5YKVY');
 </script>
+
+<style>
+	.scroll-left {
+	 height: 40px;	
+	 overflow: hidden;
+	 position: relative;
+	 background: #FFFFFF;
+	 color: #2F4F4F;
+	 border: 3px solid C3C3C3;
+	}
+	.scroll-left p {
+	 position: absolute;
+	 width: 100%;
+	 height: 100%;
+	 margin: 0;
+	 line-height: 40px;
+	 text-align: center;
+	 /* Starting position */
+	 transform:translateX(100%);
+	 /* Apply animation to this element */
+	 animation: scroll-left 10s linear infinite;
+	}
+	/* Move it (define the animation) */
+	@keyframes scroll-left {
+	 0%   {
+	 transform: translateX(100%); 		
+	 }
+	 100% {
+	 transform: translateX(-100%); 
+	 }
+	}
+</style>    
+    
     
     
 </head>
@@ -41,6 +74,9 @@
             <td class="navigation">
                 <a class="current" title="Seminar Home Page" href=".">Home</a>
             </td>
+             <td class="navigation">
+                <a title="About Us" href="About">About</a>
+            </td>
             <td class="navigation">
                 <a title="Register for the Seminar" href="registration">Registration</a>
             </td>
@@ -55,7 +91,10 @@
             </td>
         </tr>
     </table>
-
+<div class="scroll-left">
+    <p>---<strong>Deoghar College Deoghar</strong> in association with knowledge partner <strong>ABRSM</strong> (Akhil Bhartiya Rashtriya Shaikshik Mahasangh)---</p>
+</div>
+    
 <!-- part of body -->
 
 <h2>Tribals Of Jharkhand <br> & <br>Freedom Struggle Of India</h2>
