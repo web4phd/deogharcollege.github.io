@@ -27,6 +27,41 @@
   gtag('config', 'G-VBWZVC7CEN');
 </script>
     
+    
+    <style>
+	.scroll-left {
+	 height: 110px;	
+	 overflow: hidden;
+	 position: relative;
+	 background: #FFFFFF;
+	 color: #2F4F4F;
+	 border: 3px solid C3C3C3;
+	}
+	.scroll-left p {
+	 position: absolute;
+	 width: 100%;
+	 height: 100%;
+	 margin: 0;
+	 line-height: 35px;
+	 text-align: center;
+	 /* Starting position */
+	 transform:translateX(100%);
+	 /* Apply animation to this element */
+	 animation: scroll-left 25s linear infinite;
+	}
+	/* Move it (define the animation) */
+	@keyframes scroll-left {
+	 0%   {
+	 transform: translateX(100%); 		
+	 }
+	 100% {
+	 transform: translateX(-100%); 
+	 }
+	}
+</style>
+    
+    
+    
 </head>
 
 <body>
@@ -64,6 +99,12 @@
         </tr>
     </table>
 
+    
+    <div class="scroll-left">
+    <p><strong>Abstract submission extended </strong> to <span style="color: red">15th Nov 2022 (Extended)</span>15th November 2022</span></p>
+</div>
+    
+    
    <h3>Registration Guidelines</h3>
 
     <p>
@@ -84,7 +125,7 @@
   </tr>
   <tr>
     <td> Abstract Submission</td>
-    <td>10th Nov 2022</td>
+    <td><span style="color: red">15th Nov 2022 (Extended)</span></td>
   </tr>
  <tr>
     <td>Full Paper Submission </td>
