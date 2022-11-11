@@ -60,7 +60,13 @@
 	}
 </style>
     
-    
+ <style>
+		#blink {
+			font-size: 20px;
+			font-weight: bold;
+			font-family: sans-serif;
+		}
+	</style>   
     
 </head>
 
@@ -100,11 +106,20 @@
     </table>
 
     
-    <div class="scroll-left">
-    <p><strong>Abstract submission extended </strong> to <span style="color: red">15th Nov 2022</span></p>
-</div>
+    <p style="text-align:center">
+		<small>Abstract Submission extended to <span style="color: red" id="blink">15th Nov 2022</span></small>
+	</p>
     
-    
+    <script type="text/javascript">
+		var blink =
+			document.getElementById('blink');
+
+		setInterval(function () {
+			blink.style.opacity =
+			(blink.style.opacity == 0 ? 1 : 0);
+		}, 1000);
+	</script>
+	
    <h3>Registration Guidelines</h3>
 
     <p>
