@@ -56,7 +56,13 @@
 	}
 </style>
 
-    
+    <style>
+		#blink {
+			font-size: 20px;
+			font-weight: bold;
+			font-family: sans-serif;
+		}
+	</style>
     
 </head>
 
@@ -97,7 +103,21 @@
 <div class="scroll-left">
     <p><strong>Deoghar College Deoghar</strong> in association with knowledge partner <strong>ABRSM</strong> (Akhil Bhartiya Rashtriya Shaikshik Mahasangh) organizes ICSSR sponsored Interdisciplinary National Seminar on  <strong>"Tribals of Jharkhand and Freedom Struggle of India"</strong> on 26 & 27 November 2022</p>
 </div>
-    
+ 
+	
+	<p id="blink">
+		Abstract Submission date extended to <span style="color: red">15th Nov 2022</span>
+	</p>
+	
+	<script type="text/javascript">
+		var blink =
+			document.getElementById('blink');
+
+		setInterval(function () {
+			blink.style.opacity =
+			(blink.style.opacity == 0 ? 1 : 0);
+		}, 1000);
+	</script>
 <!-- part of body -->
 
 <h2>Tribals Of Jharkhand <br> & <br>Freedom Struggle Of India</h2>
